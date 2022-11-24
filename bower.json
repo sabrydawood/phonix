@@ -1,0 +1,9 @@
+{
+  "name": "phonix",
+  "version": "0.0.1",
+  "main": "src/phonix.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ]
+}
