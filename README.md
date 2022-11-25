@@ -1,5 +1,12 @@
 # phonix
 
+[![Version](https://img.shields.io/npm/v/phonix-js.svg?color=3884FF&label=version)](https://www.npmjs.com/package/phonix-js)
+
+[![Downloads](https://img.shields.io/npm/dt/phonix-js.svg?color=3884FF)](https://www.npmjs.com/package/phonix-js)
+
+[![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen?color=3884FF)](https://www.npmjs.com/package/phonix-js)
+
+[![Quality](https://packagequality.com/shield/phonix-js.svg?color=3dd164)](https://packagequality.com/#?package=phonix-js)
 
 phonix supports setting headers globally for all requests and setting headers individually for each request. It also automatically parses json in responses with the appropriate content type. phonix is based off of [atomic](https://github.com/toddmotto/atomic) and angularjs's [$http](https://github.com/angular/angular.js/blob/v1.3.x/src/ng/http.js). phonix was written because atomic didn't support common features (setting headers & sending json POST requests) and [React](https://facebook.github.io/react/index.html) didn't come with a built in ajax library (recommending jQuery's ajax instead).
 
