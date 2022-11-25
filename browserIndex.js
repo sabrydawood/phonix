@@ -1,1 +1,1 @@
-module.exports = exports = require('./src/phonix');
+module.exports = exports = require('./browser/phonix');

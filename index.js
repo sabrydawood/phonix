@@ -1,1 +1,1 @@
-module.exports = exports = require('./lib/phonix-server');
+module.exports = exports = require('./lib');

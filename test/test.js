@@ -9,13 +9,13 @@ if(isNode) {
     testserver = require('./api/testapi');
     var path = require('path');
 
-    var jsdom = require('jsdom/lib/old-api');
+    var jsdom = require('jsdom');
 
     testSetup = function(callback) {
         jsdom.env({
             html: '<html><body></body></html>',
             scripts: [
-                path.join(__dirname, '../src/phonix.js')
+                path.join(__dirname, '../browser/phonix')
             ],
             features: {
                 FetchExternalResources: ["script"],

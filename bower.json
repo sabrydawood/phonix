@@ -1,7 +1,7 @@
 {
   "name": "phonix",
   "version": "0.0.1",
-  "main": "src/phonix.js",
+  "main": "browser/phonix",
   "ignore": [
     ".jshintrc",
     "**/*.txt"

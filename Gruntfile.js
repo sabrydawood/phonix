@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                 reporter: require('jshint-stylish')
             },
             all: {
-                src: ['src/phonix.js']
+                src: ['browser/phonix.js']
             }
         },
         uglify: {
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'src/',
+                        cwd: 'browser/',
                         src: ['**/*.js'],
                         dest: 'dist/',
                         ext: '.min.js',
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     position: 'top',
-                    banner: '/*! <%= packageJson.name %> v<%= packageJson.version %> | (c) <%= grunt.template.today(\'yyyy\') %> @virgel1995 | <%= packageJson.homepage %> */'
+                    banner: '/*! <%= packageJson.name %> v<%= packageJson.version %> | (c) <%= new Date() %> @virgel1995 | <%= packageJson.homepage %> */'
                 },
                 files: {
                     src: ['dist/phonix.min.js']

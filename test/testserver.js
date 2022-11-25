@@ -2,7 +2,7 @@ var assert = require('assert');
 
 var testserver = require('./api/testapi');
 
-var phonix = require('../lib/phonix-server');
+var phonix = require('../lib');
 
 //I'm too lazy to modify the client side tests, so "mock" window & testSetup
 var window = {phonix: phonix};
@@ -10,7 +10,7 @@ var testSetup = function(callback) {
     callback(null, window);
 };
 
-describe('phonix-server', function() {
+describe('phonix', function() {
 
     describe('GET', function() {
 

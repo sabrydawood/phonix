@@ -20,7 +20,7 @@ Alternatively, you can install from bower as well:
 bower init && bower install virgel1995/phonix
 ```
 
-###### Nodejs
+## Nodejs
 
 To install with nodejs, run the following:
 ```shell
@@ -42,10 +42,15 @@ Use app.get() to make a GET request. You can use "then... catch" callbacks to ob
 ```javascript
 app.get('/api/endpoint').then(function(res) {
     //Successful response
+	console.log(res)
 }).catch(function(err) {
     //Error
+console.log(err)
 });
 
+app.run(3000, function () {
+	console.log("server started")
+})
 ```
 
 You can specify options by passing an options object to any request (see the Options section for more information):

@@ -1,1 +1,5 @@
-test/
+test/*
+.replit
+replit.nix
+.config
+.upm

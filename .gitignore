@@ -4,3 +4,8 @@ npm-debug.log
 .tmp
 .DS_Store
 coverage
+.replit
+replit.nix
+.config
+.upm
+.vscode

@@ -1,7 +1,7 @@
 {
   "name": "phonix-js",
   "description": "A micro ajax http library with a unified api for browsers and nodejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/virgel1995/phonix",
   "homepage": "http://clony.vercel.app/doc/phonix/",
   "keywords": [
@@ -22,8 +22,9 @@
   "scripts": {
     "build": "grunt build",
     "test": "NODE_ENV=test node node_modules/.bin/mocha \"test/testserver.js\"",
-    "test-coverage": "NODE_ENV=test node node_modules/.bin/mocha -r blanket -R html-cov > coverage/coverage.html",
-		"format": "prettier ."
+    "test-coverage": "NODE_ENV=test node node_modules/.bin/mocha --require blanket -R html-cov > coverage.html",
+		"format": "prettier .",
+		"dev": "node test/phonix.js"
   },
   "devDependencies": {
     "blanket": "1.2.3",
@@ -46,7 +47,7 @@
   "config": {
     "blanket": {
       "pattern": [
-        "src/**/*.js"
+        "browser/**/*.js"
       ]
     }
   },
